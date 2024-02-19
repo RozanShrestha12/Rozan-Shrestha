@@ -1,297 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rozan Shrestha</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/png" href="letter-r-logo-icon-vector-23879447.jpg">
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Rozan Shrestha</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rozan Shrestha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/png" href="letter-r-logo-icon-vector-23879447.jpg">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Rozan Shrestha</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#Journey">My Journey</a></li>
+
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Rozan Shrestha</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="mainimg" src="profile.jpg" alt="Rozan Shrestha" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Rozan Shrestha</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2">
+          <a href="resume CV.pdf" download="resume CV.pdf">Download CV</a>
+        </button>
+
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/rozan-shrestha-375772284/'" />
+
+        <img src="github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/RozanShrestha12'" />
+
+        <img src="insta-logo.webp" alt="My Github profile" class="icon"
+          onclick="location.href='https://www.instagram.com/rozan_stha__/'" />
+
+          <img src="facebook.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://www.facebook.com/rzn.gaming.129/'" />
+      </div>
+
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="profile white ray.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Secondary school -SEE <br />Currently in High school +2</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hi, I'm Rozan Shrestha, a results-driven front-end developer passionate about creating
+            sleek, user-friendly websites. Proficient in HTML, CSS, and Bootstrap, I specialize
+            in turning innovative ideas into pixel-perfect, responsive designs.
+            I excel in collaborating with teams to deliver
+            high-quality projects on time. Let's build something exceptional together!
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+
+  
+  <h1 class="myjy">My Journey</h1>
+  <main class="row">
+
+    <!--   *******  Education Section Starts  *******   -->
+    
+
+   
+
+    <section class="col">
+
+      <header class="title">
+        <h2>Education</h2>
+      </header>
+
+      <div class="contents">
+
+        <div class="box">
+          <h4>2009 - 2022</h4>
+          <h3>Secondary School Degree</h3>
+          <p>I graduated from Tender Feet Boarding School, known for its holistic education approach and focus on
+            student development.</p>
+        </div>
+
+        <div class="box">
+          <h4>2023 - Ongoing</h4>
+          <h3>HighSchool Degree</h3>
+          <p>Currently attending Koshi Saint James High School, renowned for its academic excellence and supportive
+            environment.</p>
+        </div>
+
+        <div class="box">
+          <h4>2026 - 2029</h4>
+          <h3>Bachelor Degree</h3>
+          <p>I'm currently in high school, and my next step is to pursue a bachelor's degree.</p>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!--   *******  Education Section Ends  *******   -->
+
+    <!--   *******  Experience Section Starts  *******  -->
+
+    <section class="col">
+
+      <header class="title">
+        <h2>Experience</h2>
+      </header>
+
+      <div class="contents">
+
+        <div class="box">
+          <h4>2020 - 2021</h4>
+          <h3>UI/UX Designer</h3>
+          <p>I learned UI/UX design through online resources, practice, and seeking feedback. Passion drove me to refine
+            my skills and stay updated on industry trends.</p>
+        </div>
+
+        <div class="box">
+          <h4>2020 - 2022</h4>
+          <h3>Full-Stack Developer</h3>
+          <p>I learned Full Stack Development through Angelena Yu, mastering both front-end and back-end skills.
+            Passion for innovation keeps me updated on emerging technologies.</p>
+        </div>
+
+        <div class="box">
+          <h4>2021 - 2022</h4>
+          <h3>Frontend Developer</h3>
+          <p>I mastered Front End Development through online courses like Angelena YU, focusing on creating engaging user interfaces.
+            Passion for innovation keeps me updated on emerging technologies.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--   *******  Experience Section Ends   *******  -->
+  </main>
+</section>
+  
+
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>BootStrap</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Content Writings</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>UI Designsing</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Video Editing</h2>
+          <div class="article-container">
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Narrative Editing</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Montage Editing</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Cutting on Action</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Jump Cut</h3>
+                <p>Professional</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:rozanog2@gmail.com">rozanog2@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/rozan-shrestha-375772284/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          
+
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rozan Shrestha</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="best pro.jpg" alt="Rozan Shrestha" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Rozan Shrestha</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2">
-            <a href="resume CV.pdf" download="resume CV.pdf">Download CV</a>
-          </button>
-          
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/rozan-shrestha-375772284/'"
-          />
-          <img
-            src="github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/RozanShrestha12'" 
-          />
-        </div>
-        
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="profile white ray.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Secondary school -SEE <br />Currently in High school +2</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hi, I'm Rozan Shrestha, a results-driven front-end developer passionate about creating 
-              sleek, user-friendly websites. Proficient in HTML, CSS, and Bootstrap, I specialize 
-              in turning innovative ideas into pixel-perfect, responsive designs.
-               I excel in collaborating with teams to deliver
-               high-quality projects on time. Let's build something exceptional together!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>BootStrap</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Content Writings</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>UI Designsing</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Video Editing</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Narrative Editing</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Montage Editing</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Cutting on Action</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jump Cut</h3>
-                  <p>Professional</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-       
-    
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:rozanog2@gmail.com">rozanog2@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/rozan-shrestha-375772284/" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Rozan Shrestha. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <p>Copyright &#169; 2024 Rozan Shrestha. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

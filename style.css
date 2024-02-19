@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.mainimg {
+  border-radius: 5%;
+}
+
 p {
   color: rgb(85, 85, 85);
 }
@@ -176,7 +180,7 @@ section {
   margin: auto 0;
   border-radius: 2rem;
 
-  
+
 }
 
 .section__text {
@@ -435,16 +439,16 @@ footer p {
 }
 
 
-.btn-container a{
+.btn-container a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
-.btn-container button{
+.btn-container button {
   text-decoration: none;
 }
 
-#btn btn-color-1{
+#btn btn-color-1 {
   font-family: "Poppins", sans-serif;
 
 }
@@ -453,17 +457,127 @@ footer p {
 
 
 
-  .article-container {
-    display: flex;
+.article-container {
+  display: flex;
+}
+
+.article {
+  flex: 1;
+  margin: 0 10px;
+  /* Adjust margin as needed for spacing between articles */
+  text-align: center;
+  /* Optional: Center content */
+}
+
+.icon {
+  max-width: 100%;
+  /* Ensure images don't exceed container width */
+}
+
+.container {
+  width: 100%;
+  padding: 35px 10%;
+}
+
+.container {
+  padding-right: calc(10% - 30px);
+}
+
+main.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.col header.title {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 0px 0px 20px 30px;
+  font-size: 20px;
+}
+
+.col .contents {
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+  font-family: "Poppins", sans-serif;
+}
+
+.col .contents .box {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.col .contents .box:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+  font-family: "Poppins", sans-serif;
+}
+
+.col .contents .box::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #11a372;
+  border: 2px solid white;
+  font-family: "Poppins", sans-serif;
+}
+
+.h3{
+  font-family: "Poppins", sans-serif;
+}
+.h2{
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+.myjy{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  margin-top: 70px;
+
+}
+
+.col {
+  margin-bottom: 320px;
+  margin-top: 40px;
+}
+
+.box h4 {
+  position: relative;
+  color: #11a372;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.box h3 {
+  font-size: 19px;
+  padding: 10px 0px 6px;
+  font-family: helvetica;
+  color: #444;
+}
+
+.box p {
+  line-height: 1.2;
+  color: #666;
+  font-size: 17px;
+}
+
+@media(max-width: 768px) {
+  main.row {
+    grid-template-columns: 1fr;
   }
 
-  .article {
-    flex: 1;
-    margin: 0 10px; /* Adjust margin as needed for spacing between articles */
-    text-align: center; /* Optional: Center content */
+  .row .col:nth-child(2) {
+    margin-top: 30px;
   }
-
-  .icon {
-    max-width: 100%; /* Ensure images don't exceed container width */
-  }
-
+}
